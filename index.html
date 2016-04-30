@@ -8,7 +8,7 @@
 
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
-    <link rel="icon" href="favicon.png"/>
+    <link rel="icon" href="favicon%20.ico"/>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/layout.css"/>
     <link rel="stylesheet" href="css/style.css"/>
@@ -28,7 +28,8 @@
                 </a>
             </div>
             <nav class="ba-float-right">
-                <ul class="main-menu">
+                <button class="menu-button"><span></span></button>
+                <ul class="main-menu" id="main-menu">
                     <li class="main-menu__item active"><a href="#" class="main-menu__link">Home</a></li>
                     <li class="main-menu__item"><a href="#" class="main-menu__link">About</a></li>
                     <li class="main-menu__item"><a href="#" class="main-menu__link">Igredients</a></li>
@@ -36,7 +37,7 @@
                     <li class="main-menu__item"><a href="#" class="main-menu__link">Reviews</a></li>
                     <li class="main-menu__item"><a href="#" class="main-menu__link">Reservations</a></li>
                 </ul>
-                <ul class="social">
+                <ul class="social cf">
                     <li class="social__item">
                         <a href="#" class="social__link">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -60,25 +61,28 @@
         <h1 class="ba-intro__title">the right ingredients
             for the right food</h1>
         <!--<div class="ba-intro__buttons">-->
-        <a href="#" class="ba-button ba-intro__button">BOOK A TABLE</a>
-        <a href="#" class="ba-button ba-intro__button">SEE THE MENU</a>
+        <a href="#" class="ba-button ba-button--black">BOOK A TABLE</a>
+        <a href="#" class="ba-button ba-button--white">SEE THE MENU</a>
         <!--</div>-->
 
     </div>
 </div>
 <section class="ba-right-food">
     <div class="ba-container">
-        <div class="ba-grid ba-right-food-grid">
-            <div class="ba-width-medium-1-2 ba-right-food__content">
-                <h2 class="ba-title">Just the right food</h2>
-                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming
-                    back
-                    for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet
-                    coffees
-                    make us hard to resist! Stop in today and check us out!</p>
+        <div class="ba-grid">
+            <div class="ba-width-medium-1-2">
+                <div class="ba-right-food__content">
+                    <h2 class="ba-title">Just the right food</h2>
+                    <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers
+                        coming
+                        back
+                        for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet
+                        coffees
+                        make us hard to resist! Stop in today and check us out!</p>
+                </div>
                 <img class="ba-right-food__content-img" src="img/cook.png" alt="cook">
             </div>
-            <div class="ba-width-medium-1-2">
+            <div class="ba-width-medium-1-2 ba-right-food__bc">
                 <img class="ba-right-food__img" src="img/dish.png" alt="">
             </div>
         </div>
@@ -87,7 +91,7 @@
 <section class="ba-ingredients">
     <div class="ba-container cf">
         <div class="ba-ingredients__content ba-float-right ba-text-center">
-            <h2 class="ba-title ba-title-white">Fine ingredients</h2>
+            <h2 class="ba-title ba-title--light">Fine ingredients</h2>
             <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back
                 for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees
                 make us hard to resist! Stop in today and check us out!</p>
@@ -110,29 +114,237 @@
         <div class="ba-grid">
             <div class="ba-width-medium-1-2">
                 <h2 class="ba-title">Appetisers</h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul class="ba-menu-group">
+                    <li class="ba-menu-group__item">
+                        <div class="ba-menu-group__box">
+                            <h4 class="ba-menu-group__title">Tzatsiki</h4>
+                            <span class="ba-menu-group__price">$3.99</span>
+                        </div>
+                        <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                    </li>
+                    <li class="ba-menu-group__item">
+                        <div class="ba-menu-group__box">
+                            <h4 class="ba-menu-group__title">Aubergine Salad </h4>
+                            <span class="ba-menu-group__price">$5.50</span>
+                        </div>
+                        <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                    </li>
+                    <li class="ba-menu-group__item">
+                        <div class="ba-menu-group__box">
+                            <h4 class="ba-menu-group__title">Aubergine Salad </h4>
+                            <span class="ba-menu-group__price">$5.50</span>
+                        </div>
+                        <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                    </li>
                 </ul>
-
-                <h2 class="ba-title">Starters</h2>
+                <h2 class="ba-title">Salads</h2>
+                <ul class="ba-menu-group">
+                    <li class="ba-menu-group__item">
+                        <div class="ba-menu-group__box">
+                            <h4 class="ba-menu-group__title">Olive Special</h4>
+                            <span class="ba-menu-group__price">$5.99</span>
+                        </div>
+                        <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                    </li>
+                    <li class="ba-menu-group__item">
+                        <div class="ba-menu-group__box">
+                            <h4 class="ba-menu-group__title">Greek Salad</h4>
+                            <span class="ba-menu-group__price">$5.50</span>
+                        </div>
+                        <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                    </li>
+                    <li class="ba-menu-group__item">
+                        <div class="ba-menu-group__box">
+                            <h4 class="ba-menu-group__title">Gusto Salad</h4>
+                            <span class="ba-menu-group__price">$5.25</span>
+                        </div>
+                        <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                    </li>
+                </ul>
             </div>
             <div class="ba-width-medium-1-2">
-                <h2 class="ba-title">Salads</h2>
+                <h2 class="ba-title">Starters</h2>
+                <ul class="ba-menu-group">
+                    <li class="ba-menu-group__item">
+                        <div class="ba-menu-group__box">
+                            <h4 class="ba-menu-group__title">Haloumi</h4>
+                            <span class="ba-menu-group__price">$3.99</span>
+                        </div>
+                        <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                    </li>
+                    <li class="ba-menu-group__item">
+                        <div class="ba-menu-group__box">
+                            <h4 class="ba-menu-group__title">Spinach Pie</h4>
+                            <span class="ba-menu-group__price">$5.50</span>
+                        </div>
+                        <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                    </li>
+                </ul>
 
                 <h2 class="ba-title">Main Dishes</h2>
+                <ul class="ba-menu-group">
+                    <li class="ba-menu-group__item">
+                        <div class="ba-menu-group__box">
+                            <h4 class="ba-menu-group__title">Cornish Mackerel</h4>
+                            <span class="ba-menu-group__price">$5.99</span>
+                        </div>
+                        <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                    </li>
+                    <li class="ba-menu-group__item">
+                        <div class="ba-menu-group__box">
+                            <h4 class="ba-menu-group__title">Roast Lamb</h4>
+                            <span class="ba-menu-group__price">$5.50</span>
+                        </div>
+                        <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                    </li>
+                    <li class="ba-menu-group__item">
+                        <div class="ba-menu-group__box">
+                            <h4 class="ba-menu-group__title">Fried Chicken</h4>
+                            <span class="ba-menu-group__price">$5.25</span>
+                        </div>
+                        <p>Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                    </li>
+                    <li class="ba-menu-group__item">
+                        <div class="ba-menu-group__box">
+                            <h4 class="ba-menu-group__title">Pastitsio</h4>
+                            <span class="ba-menu-group__price">$5.99</span>
+                        </div>
+                        <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
+<section class="ba-guest">
+    <div class="ba-container">
 
+            <div class="ba-guest__reviews">
+                <h2 class="ba-title ba-title--light">Guest Reviews</h2>
+                <blockquote>
+                    <p class="ba-guest__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what
+                        keeps our customers coming
+                        back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and
+                        gourmet coffees make us hard to resist! Stop in today and check us out!</p>
+                    <span class="ba-guest__autor">- food inc, New York</span>
+                </blockquote>
+            </div>
+
+    </div>
+</section>
+<section class="ba-contact">
+    <div class="ba-container">
+        <div class="ba-grid">
+            <div class="ba-width-medium-1-2">
+                <div class="ba-grid">
+                    <div class="ba-width-small-1-2">
+                        <img class="ba-contact__img" src="img/contact-img1.jpg" alt="">
+                    </div>
+                    <div class="ba-width-small-1-2">
+                        <img class="ba-contact__img" src="img/contact-img2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ba-width-medium-1-2">
+                <div class="ba-contact__right-food ba-text-center">
+                    <h2 class="ba-title">Just the right food</h2>
+                    <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming
+                        back for more. Perfect materials and freshly baked food.</p>
+                    <p>Delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check
+                        us out! Perfect materials and freshly baked food.</p>
+
+                    <form action="" class="ba-contact-form">
+                        <div class="ba-grid">
+                            <div class="ba-width-small-1-2">
+                                <label><p>Name</p>
+                                    <input type="text" placeholder="your name*"></label>
+                            </div>
+                            <div class="ba-width-small-1-2">
+                                <label><p>Email</p>
+                                    <input type="email" placeholder="your email*"></label>
+                            </div>
+                        </div>
+                        <div class="ba-grid">
+                            <div class="ba-width-small-1-2">
+                                <label><p>Date</p>
+                                    <input type="text" placeholder="date*"></label>
+                            </div>
+                            <div class="ba-width-small-1-2">
+                                <label><p>Party number</p>
+                                    <input type="number" placeholder="party number"></label>
+                            </div>
+                        </div>
+                        <label class="ba-text-center"> <input type="submit" class="ba-button" value="Book now!"></label>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
 <main role="main">
 
 </main>
-<footer class="ba-footer">
-
+<footer class="ba-footer ba-text-center">
+    <div class="ba-container">
+        <div class="ba-grid">
+            <div class="ba-width-medium-1-3">
+                <aside>
+                    <h4 class="ba-footer__title ba-title--light">About Us</h4>
+                    <p>Lambda's new and expanded Chelsea location represents a truly authentic Greek patisserie,
+                        featuring
+                        breakfasts of fresh croissants and steaming bowls of café.
+                        Lamda the best restaurant in town</p>
+                </aside>
+            </div>
+            <div class="ba-width-medium-1-3">
+                <aside>
+                    <h4 class="ba-footer__title ba-title--light">Opening Hours</h4>
+                    <time datetime="Mon-Thu: 7:00am-8:00pm"><b>Mon-Thu:</b> 7:00am-8:00pm</time>
+                    </br>
+                    <time datetime="Fri-Sun: 7:00am-10:00pm"><b>Fri-Sun:</b> 7:00am-10:00pm</time>
+                    <ul class="ba-card cf">
+                        <li class="ba-card__item"><a href="#" class="ba-card__link ba-card__link--some"></a></li>
+                        <li class="ba-card__item"><a href="#" class="ba-card__link ba-card__link--peypal"></a></li>
+                        <li class="ba-card__item"><a href="#" class="ba-card__link ba-card__link--visa"></a></li>
+                        <li class="ba-card__item"><a href="#" class="ba-card__link ba-card__link--another"></a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="ba-width-medium-1-3">
+                <aside>
+                    <h4 class="ba-footer__title ba-title--light">Our Location</h4>
+                    <address>19th Paradise Street Sitia</address>
+                    <address>128 Meserole Avenue</address>
+                    <ul class="ba-social-footer">
+                        <li class="ba-social-footer__item">
+                            <a href="#" class="ba-social-footer__link">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="ba-social-footer__item">
+                            <a href="#" class="ba-social-footer__link">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="ba-social-footer__item">
+                            <a href="#" class="ba-social-footer__link">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="ba-social-footer__item">
+                            <a href="#" class="ba-social-footer__link">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
 </footer>
+<script src="js/jquery-1.12.3.min%20.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
